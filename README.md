@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # League Ranking
 
 ## Overview
@@ -87,3 +88,6 @@ This application is designed to be maintainable and testable, with a focus on cl
 ```
 
 ### Team1 2, Team2 3 Team1 4, Team3 2 Team2 2, Team3 2
+=======
+# league-ranking
+>>>>>>> 693913f42aa46e70a39ebbd072e461a096916b13
