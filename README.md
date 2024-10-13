@@ -30,7 +30,7 @@ mvn clean install
 To run the application, provide an input file with the match results:
 
 ```bash
-scala -cp target/league-ranking_2.13-1.0-SNAPSHOT.jar com.league.ranking.Main input.txt
+scala -cp target/league-ranking_2.13-1.0-SNAPSHOT.jar com.league.ranking.Main src/main/resources/input.txt
 ```
 
 ### Testing the Application
