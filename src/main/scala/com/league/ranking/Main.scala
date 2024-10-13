@@ -4,6 +4,9 @@ import scala.io.Source
 import scala.util.{Failure, Success, Try}
 
 /**
+ * @author Sam Rabophala
+ * @version 1.0
+ * @since 2024-10-12
  * The entry point of the application.
  */
 object Main {

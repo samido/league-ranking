@@ -1,3 +1,22 @@
+# Project Declaration
+## Ownership and Rights
+This project was developed as part of a coding challenge for SPAN Digital. All code, documentation, and associated files contained within this repository are my original work and were created specifically for this assignment.
+
+## Important Notes
+### Copyright: 
+All rights to this work are owned by SPAN Digital. The contents of this repository may not be copied, modified, or distributed in any form without prior written consent from SPAN Digital.
+
+### Confidentiality: 
+This project is intended solely for the review and evaluation purposes of SPAN Digital. Any unauthorized use or distribution of this material is strictly prohibited.
+
+### Acknowledgment: 
+By accessing this repository, you acknowledge that you understand and agree to the terms outlined above.
+
+Thank you for respecting the intellectual property rights associated with this work.
+
+---
+___
+
 # League Ranking
 
 ## Overview
@@ -31,6 +50,10 @@ To run the application, provide an input file with the match results:
 
 ```bash
 scala -cp target/league-ranking_2.13-1.0-SNAPSHOT.jar com.league.ranking.Main src/main/resources/input.txt
+```
+### OR
+```bash
+java -cp target/league-ranking_2.13-1.0-SNAPSHOT.jar com.league.ranking.Main src/main/resources/input.txt
 ```
 
 ### Testing the Application
@@ -87,6 +110,4 @@ This application is designed to be maintainable and testable, with a focus on cl
 ```
 
 ### Team1 2, Team2 3 Team1 4, Team3 2 Team2 2, Team3 2
-=======
-# league-ranking
->>>>>>> 693913f42aa46e70a39ebbd072e461a096916b13
+

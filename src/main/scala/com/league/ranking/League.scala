@@ -3,6 +3,9 @@ package com.league.ranking
 import scala.collection.mutable
 
 /**
+ * @author Sam Rabophala
+ * @version 1.0
+ * @since 2024-10-12
  * A class representing the league, containing the teams and their results.
  */
 class League {

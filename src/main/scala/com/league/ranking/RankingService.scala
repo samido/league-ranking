@@ -4,6 +4,9 @@ import scala.collection.mutable
 import scala.util.Try
 
 /**
+ * @author Sam Rabophala
+ * @version 1.0
+ * @since 2024-10-12
  * A service to calculate the league rankings.
  */
 class RankingService {

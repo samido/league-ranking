@@ -3,6 +3,13 @@ package com.league.ranking
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
+/**
+ * @author Sam Rabophala
+ * @version 1.0
+ * @since 2024-10-12
+ * A unit-test class that test all the coverage implemented
+ */
+
 class RankingServiceSpec extends AnyFlatSpec with Matchers {
 
   "A RankingService" should "calculate the correct rankings for typical results" in {
