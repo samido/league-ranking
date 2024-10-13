@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # League Ranking
 
 ## Overview
 This is a command-line application written in Scala that calculates the ranking of teams in a league based on the results of their matches.
 
 ## Requirements
-- Java 17 or later
+- Java 21 or later
 - Maven 3.6 or later
 - Scala 2.13.15
 
@@ -31,7 +30,7 @@ mvn clean install
 To run the application, provide an input file with the match results:
 
 ```bash
-scala -cp target/scala-2.13/league-ranking_2.13-1.0-SNAPSHOT.jar com.example.Main input.txt
+scala -cp target/league-ranking_2.13-1.0-SNAPSHOT.jar com.league.ranking.Main input.txt
 ```
 
 ### Testing the Application
