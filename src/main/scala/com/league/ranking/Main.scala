@@ -1,7 +1,7 @@
 package com.league.ranking
 
 import scala.io.Source
-import scala.util.{Failure, Success, Try}
+import scala.util.{Failure, Success, Try, Using}
 
 /**
  * @author Sam Rabophala
@@ -20,7 +20,9 @@ object Main {
     val rankingService = new RankingService()
 
     // Read input from file
-    val result = Try(Source.fromFile(filename).getLines().toList) match {
+    val result = Using(Source.fromFile(filename)) { source =>
+      source.getLines().toList
+    } match {
       case Success(lines) => rankingService.calculateRanking(lines)
       case Failure(ex) =>
         println(s"Error reading file: ${ex.getMessage}")

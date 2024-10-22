@@ -80,17 +80,19 @@ class RankingService {
    * @return A formatted string list of rankings.
    */
   private def formatRanking(teams: List[Team]): List[String] = {
-    teams
+    val sortedTeams = teams
       .groupBy(_.points)
       .toList
       .sortBy(-_._1) // Sort by points descending
-      .zipWithIndex
-      .flatMap { case (group, index) =>
-        val rank = index + 1
-        group._2.sortBy(_.name).map { team =>
-          val pointStr = if (team.points == 1) "pt" else "pts"
-          s"$rank. ${team.name}, ${team.points} $pointStr"
-        }
+
+    var currentRank = 1
+    sortedTeams.flatMap { case (points, teamsWithSamePoints) =>
+      val rankedTeams = teamsWithSamePoints.sortBy(_.name).map { team =>
+        val pointStr = if (team.points == 1) "pt" else "pts"
+        s"$currentRank. ${team.name}, ${team.points} $pointStr"
       }
+      currentRank += teamsWithSamePoints.size
+      rankedTeams
+    }
   }
 }
